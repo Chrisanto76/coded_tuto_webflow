@@ -1,0 +1,83 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.nav-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-brand {
+    margin-top: 14px;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    background-color: #47009e;
+    padding: 18px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-style: none;
+}
+
+.section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-height: auto;
+}
+
+.big-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 61px;
+}
+.hero-paragraph {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 600px;
+}
+.calendar-img {
+    width: 900px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    box-shadow: 0 2px 117px -46px #47009e;
+}
+
+.major-button {
+    padding: 9px 18px 9px 18px;
+    font-weight: bold;
+    font-size: 14px;
+    border-style: none;
+    background-color: #47009e;
+    box-shadow: 0 2px 117px -46px #47009e;
+    color: white;
+    border-radius: 4px;
+}
