@@ -1,83 +1,176 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
 body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 .nav-container {
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0px;
-    margin: 0px;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
 }
 .nav-brand {
-    margin-top: 14px;
+  margin-top: 14px;
 }
 .nav-link {
-    text-decoration: none;
-    color: black;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .nav-button {
-    background-color: #47009e;
-    padding: 18px;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    border-style: none;
+  background-color: #47009e;
+  padding: 18px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-style: none;
 }
 
 .section {
-    margin-top: 60px;
-    margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: auto;
+  height: auto;
 }
 
 .first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-height: auto;
+}
+
+.big-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 61px;
+}
+.hero-paragraph {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 600px;
+}
+.calendar-img {
+  width: 960px;
+  height: 506px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  box-shadow: 0 2px 117px -46px #47009e;
+}
+
+.major-button {
+  padding: 9px 18px 9px 18px;
+  font-weight: bold;
+  font-size: 14px;
+  border-style: none;
+  background-color: #47009e;
+  box-shadow: 0 2px 117px -46px #47009e;
+  color: white;
+  border-radius: 4px;
+}
+
+.logo-holder {
+  display: grid;
+  margin-top: 0px;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.digest-holder {
+  display: grid;
+  margin-top: 0px;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-top: 60px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.need {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.card h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  width: 100%;
+}
+
+.card p {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.log-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: start;
     width: auto;
     max-height: auto;
 }
 
-.big-heading {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 61px;
+.demo {
+    display: flex;
+  
 }
-.hero-paragraph {
-    margin-bottom: 20px;
-    text-align: center;
-    width: 600px;
-}
-.calendar-img {
-    width: 900px;
-    margin-top: 60px;
-    margin-bottom: 0px;
-    box-shadow: 0 2px 117px -46px #47009e;
-}
+/* responsive */
 
-.major-button {
-    padding: 9px 18px 9px 18px;
-    font-weight: bold;
-    font-size: 14px;
-    border-style: none;
-    background-color: #47009e;
-    box-shadow: 0 2px 117px -46px #47009e;
-    color: white;
-    border-radius: 4px;
+@media screen and (max-width: 600px) {
+  .card {
+    max-width: 100%;
+  }
+  .logo-holder {
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .digest-holder {
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 5px;
+  }
 }
