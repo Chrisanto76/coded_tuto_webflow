@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="site _inspi_webflow/space_calendar/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="site _inspi_webflow/space_calendar/css/index.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,9 +17,12 @@
     <title>Space Calendar</title>
   </head>
   <body>
-    <div class="nav-container">
+    <!-- <div class="nav-container">
       <a href="#" class="nav-brand"
-        ><img src="site _inspi_webflow/space_calendar/images/Calendar-logo.svg" alt="logo-brand" class="logo"
+        ><img
+          src="site _inspi_webflow/space_calendar/images/Calendar-logo.svg"
+          alt="logo-brand"
+          class="logo"
       /></a>
       <nav role="navigation" class="nav-menu">
         <a href="#" class="nav-link">Features</a>
@@ -25,9 +31,27 @@
           ><button class="nav-button">Sign up for the waitlist</button></a
         >
       </nav>
-    </div>
+    </div> -->
+	<nav class="navbar">
+	  <div class="navbar-brand">
+		<a href="#"><img
+			src="site _inspi_webflow/space_calendar/images/Calendar-logo.svg"
+			alt="logo-brand"
+		/></a>
+	  </div>
+	  <button class="navbar-toggler" onclick="toggleMenu()">
+		<span class="navbar-toggler-icon">open</span>
+	  </button>
+	  <div class="navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav">
+		  <li class="nav-link"><a href="#" >Features</a></li>
+		  <li class="nav-link"><a href="#" >Request a demo</a></li>
+		  <li class="nav-link"><a href="#" ><button class="nav-button">Sign up for the waitlist</button></a></li>
+		</ul>
+	  </div>
+	</nav>
     <section class="section">
-      <div class="first">
+      <div class="container centered container-w">
         <h1 class="big-heading">A calendar for space travel</h1>
         <p class="hero-paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
@@ -35,65 +59,184 @@
           ut explicabo dignissimos ea reiciendis libero asperiores inventore
           nisi laboriosam?
         </p>
-        <button class="major-button">Join the waitlist</button>
+        <div class="hero-paragraph">
+          <button class="major-button">Join the waitlist</button>
+        </div>
         <img
           src="site _inspi_webflow/space_calendar/images/Calendar-app.jpg"
           alt="calendar"
           class="calendar-img"
         />
       </div>
+	  
     </section>
     <section class="section">
-      <div class="first">
+      <div class="container centered container-w">
         <div class="testi">
           <p>Trusted by:</p>
         </div>
         <div class="logo-holder">
-          <div class="trust-brand"><img src="site _inspi_webflow/space_calendar/images/Logos/Avenue-5.svg" alt="avenue-logo"></div>
-          <div class="trust-brand"><img src="site _inspi_webflow/space_calendar/images/Logos/ESA.svg" alt="esa-logo"></div>
-          <div class="trust-brand"><img src="site _inspi_webflow/space_calendar/images/Logos/NASA.svg" alt="nasa-logo"></div>
-          <div class="trust-brand"><img src="site _inspi_webflow/space_calendar/images/Logos/Space-dot-com.svg" alt="space-dot-logo"></div>
-          <div class="trust-brand"><img src="site _inspi_webflow/space_calendar/images/Logos/United-Federation-of-Planets.svg" alt="ufop-logo"></div>
-          <div class="trust-brand"><img src="site _inspi_webflow/space_calendar/images/Logos/SpaceX.svg" alt="space-x-logo"></div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="first">
-        <h2 class="need">Features for every need</h2>
-        <div class="digest-holder">
-          <div class="card"><img src="site _inspi_webflow/space_calendar/images/Feature/Daily-digest.jpg" class="img" alt="">
-            <h4>Daily digest</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A consequuntur officiis sequi et veniam nostrum.</p>
-          </div><div class="card"><img src="site _inspi_webflow/space_calendar/images/Feature/AI-assistant.jpg" class="img" alt="">
-            <h4>AI assistant</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A consequuntur officiis sequi et veniam nostrum.</p>
-          </div><div class="card"><img src="site _inspi_webflow/space_calendar/images/Feature/Checker.jpg" class="img" alt="">
-            <h4>Checker</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A consequuntur officiis sequi et veniam nostrum.</p>
-          </div><div class="card"><img src="site _inspi_webflow/space_calendar/images/Feature/Calculator.jpg" class="img" alt="">
-            <h4>Calculator</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ullam, illo doloribus aut vel laudantium.</p>
-          </div><div class="card"><img src="site _inspi_webflow/space_calendar/images/Feature/Time-zoner.jpg" class="img" alt="">
-            <h4>Time zoner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A consequuntur officiis sequi et veniam nostrum.</p>
-          </div><div class="card"><img src="site _inspi_webflow/space_calendar/images/Feature/Connector.jpg" class="img" alt="">
-            <h4>Connector</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A consequuntur officiis sequi et veniam nostrum.</p>
+          <div class="trust-brand">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Logos/Avenue-5.svg"
+              alt="avenue-logo"
+            />
+          </div>
+          <div class="trust-brand">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Logos/ESA.svg"
+              alt="esa-logo"
+            />
+          </div>
+          <div class="trust-brand">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Logos/NASA.svg"
+              alt="nasa-logo"
+            />
+          </div>
+          <div class="trust-brand">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Logos/Space-dot-com.svg"
+              alt="space-dot-logo"
+            />
+          </div>
+          <div class="trust-brand">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Logos/United-Federation-of-Planets.svg"
+              alt="ufop-logo"
+            />
+          </div>
+          <div class="trust-brand">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Logos/SpaceX.svg"
+              alt="space-x-logo"
+            />
           </div>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="log-wrapper">
-        <div class="demo">
-          <h2>Request a demo</h2>
-          <p>Experience the future of space travel and see for yourself how it can revolutionize your space travel planning.</p>
+      <div class="container centered container-w">
+        <h2 class="need">Features for every need</h2>
+        <div class="digest-holder">
+          <div class="card">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Feature/Daily-digest.jpg"
+              class="img"
+              alt=""
+            />
+            <h4>Daily digest</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+              consequuntur officiis sequi et veniam nostrum.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Feature/AI-assistant.jpg"
+              class="img"
+              alt=""
+            />
+            <h4>AI assistant</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+              consequuntur officiis sequi et veniam nostrum.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Feature/Checker.jpg"
+              class="img"
+              alt=""
+            />
+            <h4>Checker</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+              consequuntur officiis sequi et veniam nostrum.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Feature/Calculator.jpg"
+              class="img"
+              alt=""
+            />
+            <h4>Calculator</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis ullam, illo doloribus aut vel laudantium.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Feature/Time-zoner.jpg"
+              class="img"
+              alt=""
+            />
+            <h4>Time zoner</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+              consequuntur officiis sequi et veniam nostrum.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="site _inspi_webflow/space_calendar/images/Feature/Connector.jpg"
+              class="img"
+              alt=""
+            />
+            <h4>Connector</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+              consequuntur officiis sequi et veniam nostrum.
+            </p>
+          </div>
         </div>
-        <div class="form">
-          <div>hello</div>
-          <div>hello</div>
-          <div>hello</div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container centered container-w">
+        <div class="demo-wrapper">
+          <h2>Request a demo</h2>
+          <p>
+            Experience the future of space travel and see for yourself how it
+            can revolutionize your space travel planning.
+          </p>
+        </div>
+        <div>
+          <div class="form">
+            <div>
+              <h4>name</h4>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-item"
+                required
+              />
+            </div>
+            <div>
+              <h4>Email address</h4>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-item"
+                required
+              />
+            </div>
+            <div>
+              <h4>Company</h4>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-item"
+                required
+              />
+            </div>
+            <input type="submit" value="submit" class="submit-b" />
+          </div>
         </div>
       </div>
     </section>
