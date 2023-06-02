@@ -16,51 +16,42 @@
     />
     <title>Space Calendar</title>
   </head>
+
   <body>
-    <!-- <div class="nav-container">
-      <a href="#" class="nav-brand"
-        ><img
-          src="site _inspi_webflow/space_calendar/images/Calendar-logo.svg"
-          alt="logo-brand"
-          class="logo"
-      /></a>
-      <nav role="navigation" class="nav-menu">
-        <a href="#" class="nav-link">Features</a>
-        <a href="#" class="nav-link">Request a demo</a>
-        <a href="#" class="nav-link-cta"
-          ><button class="nav-button">Sign up for the waitlist</button></a
-        >
+    <div class="container centered container-w">
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="site _inspi_webflow/space_calendar/images/Calendar-logo.svg"
+            alt="Logo"
+          />
+        </div>
+        <div class="navbar-items">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Request a demo</a></li>
+            <li>
+              <a href="#"
+                ><button class="nav-button">Join the waitlist</button></a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div> -->
-	<nav class="navbar">
-	  <div class="navbar-brand">
-		<a href="#"><img
-			src="site _inspi_webflow/space_calendar/images/Calendar-logo.svg"
-			alt="logo-brand"
-		/></a>
-	  </div>
-	  <button class="navbar-toggler" onclick="toggleMenu()">
-		<span class="navbar-toggler-icon">open</span>
-	  </button>
-	  <div class="navbar-collapse" id="navbarCollapse">
-		<ul class="navbar-nav">
-		  <li class="nav-link"><a href="#" >Features</a></li>
-		  <li class="nav-link"><a href="#" >Request a demo</a></li>
-		  <li class="nav-link"><a href="#" ><button class="nav-button">Sign up for the waitlist</button></a></li>
-		</ul>
-	  </div>
-	</nav>
+    </div>
     <section class="section">
       <div class="container centered container-w">
         <h1 class="big-heading">A calendar for space travel</h1>
         <p class="hero-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          blanditiis, itaque sequi eius optio dolorum quam! Quod non, rem veniam
-          ut explicabo dignissimos ea reiciendis libero asperiores inventore
-          nisi laboriosam?
+          The scheduling tool to help you stay organized on Earth & beyond<br />.
+          With multi-device sync, including those on spacecraft, <br />'ll never
+          miss a meeting or important event no matter where you are in the
+          galaxy.
         </p>
         <div class="hero-paragraph">
-          <button class="major-button">Join the waitlist</button>
+          <button class="major-button">
+            Join the waitlist for early access
+          </button>
         </div>
         <img
           src="site _inspi_webflow/space_calendar/images/Calendar-app.jpg"
@@ -68,7 +59,6 @@
           class="calendar-img"
         />
       </div>
-	  
     </section>
     <section class="section">
       <div class="container centered container-w">
@@ -203,43 +193,47 @@
             can revolutionize your space travel planning.
           </p>
         </div>
-        <div>
-          <div class="form">
-            <div>
-              <h4>name</h4>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form-item"
-                required
-              />
-            </div>
-            <div>
-              <h4>Email address</h4>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-item"
-                required
-              />
-            </div>
-            <div>
-              <h4>Company</h4>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form-item"
-                required
-              />
-            </div>
-            <input type="submit" value="submit" class="submit-b" />
+      </div>
+      <div class="container centered container-w">
+        <form action="" method="get">
+          <div>
+            <h4>name</h4>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-item"
+              required
+            />
           </div>
-        </div>
+          <div>
+            <h4>Email address</h4>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-item"
+              required
+            />
+          </div>
+          <div>
+            <h4>Company</h4>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-item"
+              required
+            />
+          </div>
+          <div>
+            <h4>Let's go !</h4>
+            <input type="submit" class="nav-button" />
+          </div>
+        </form>
       </div>
     </section>
+
     <script src="app.js"></script>
   </body>
 </html>
